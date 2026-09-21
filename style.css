@@ -1,0 +1,661 @@
+/* Основные настройки страницы */
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px;
+
+    min-height: 100vh;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Заголовок */
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 40px;
+    border-radius: 15px;
+}
+.p1 {
+    text-align: left;
+    font-size: 18px;
+    background-color: white;
+    padding: 20px 25px;
+    margin: 0;
+}
+
+.skills-text {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 25px;
+    margin-bottom: 40px;
+    transition: 0.2s;
+}
+
+.skills-text:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 17px rgba(0, 0, 0, 0.12);
+}
+
+/* Сетка увлечений */
+
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+/* Карточка */
+
+.hobby-card {
+    display: flex;
+    height: 300px;
+    background-color: white;
+    border: 3px solid #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+}
+
+
+/* Текстовая часть */
+
+.hobby-text {
+    width: 50%;
+    padding: 35px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* Заголовок внутри карточки */
+
+.hobby-text h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+
+/* Текст */
+
+.hobby-text p {
+    font-size: 17px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+
+/* Изображение */
+
+.hobby-image {
+    width: 50%;
+    overflow: hidden;
+}
+
+
+.hobby-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Кнопка назад */
+
+.back {
+    margin-top: 35px;
+    text-align: center;
+}
+
+
+.back a {
+    color: #222;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+.hidden-link {
+    color: inherit;
+    text-decoration: none;
+    cursor: default;
+}
+
+.hidden-link:hover {
+    color: inherit;
+    text-decoration: none;
+}
+.hobby-card {
+    transition: 0.2s;
+}
+
+.hobby-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 25px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #222;
+    color: white;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr {
+    transition: 0.2s;
+}
+
+tr:hover td {
+    background-color: #f7f7f7;
+}
+/* Чему хочу научиться */
+
+.goals {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+.goals li {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 18px 22px;
+    font-size: 18px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+}
+
+.goals li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 17px rgba(0, 0, 0, 0.12);
+}
+/* Три балбеса */
+.balbesi {
+    display: flex;
+    gap: 25px;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+
+
+/* Карточка */
+
+.balbes {
+    flex: 1;
+    min-width: 0;
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
+}
+
+
+/* КНОПКА БАЛБЕСА */
+
+.balbes-button {
+    width: 100%;
+    height: 70px;
+
+    padding: 0 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border: 2px solid #111;
+    border-radius: 22px;
+
+    background-color: white;
+
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+
+    cursor: pointer;
+    box-sizing: border-box;
+
+    transition: background-color 0.2s;
+}
+
+.balbes-button:hover {
+    background-color: #f5f5f5;
+}
+
+.balbes-button .arrow {
+    font-size: 38px;
+    font-weight: normal;
+    line-height: 1;
+
+    transform: rotate(180deg);
+
+    transition: transform 0.4s ease;
+}
+
+
+/* Карточка при открытии */
+
+.balbes:has(.balbes-info.active) {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================
+   ИНФОРМАЦИЯ
+   ========================================= */
+
+.balbes-info {
+    max-height: 0;
+    overflow: hidden;
+
+    padding: 0 20px;
+
+    opacity: 0;
+
+    transform: translateY(-10px);
+
+    transition:
+        max-height 0.6s ease,
+        opacity 0.4s ease,
+        transform 0.4s ease,
+        padding 0.4s ease;
+}
+
+.balbes-info.active {
+    max-height: 750px;
+    padding: 20px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Текст */
+
+.balbes-info p {
+    margin-top: 20px;
+
+    font-size: 16px;
+    line-height: 1.6;
+
+    text-align: justify;
+}
+
+
+/* =========================================
+   ГАЛЕРЕЯ
+   ========================================= */
+
+.gallery {
+    position: relative;
+
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Фотография */
+
+.gallery-img {
+    display: block;
+
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+
+/* =========================================
+   КНОПКИ ← →
+   ========================================= */
+
+.gallery button {
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    z-index: 2;
+
+    width: 45px;
+    height: 45px;
+
+    padding: 0;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: rgba(0, 0, 0, 0.6);
+
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.2s;
+}
+
+
+/* Левая кнопка */
+
+.gallery .prev {
+    left: 10px;
+}
+
+
+/* Правая кнопка */
+
+.gallery .next {
+    right: 10px;
+}
+
+
+/* Наведение на стрелки */
+
+.gallery button:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+
+    transform: translateY(-50%) scale(1.05);
+}
+
+/* Лето 2026 */
+
+.summer-gallery {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.summer-card {
+    width: 33.33%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.25s;
+}
+
+.summer-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    transition: 0.25s;
+}
+
+.summer-card h2 {
+    margin: 15px 20px 5px;
+    font-size: 22px;
+}
+
+.summer-card p {
+    margin: 0 20px 20px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.summer-card:hover {
+    transform: translateY(-7px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+.summer-card:hover img {
+    transform: scale(1.05);
+}
+
+.summer-text {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 20px 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    transition: 0.2s;
+}
+
+.summer-text:hover {
+    background-color: #f7f7f7;
+    border-color: #aaa;
+    transform: translateY(-2px);
+}
+
+/* Главная страница */
+
+.home {
+    text-align: center;
+    min-height: calc(100vh - 60px);
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 20px;
+}
+
+
+/* Главный заголовок */
+
+.main-title {
+    font-size: 46px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+
+/* Текст под заголовком */
+
+.welcome-title {
+    font-size: 30px;
+    margin: 0 0 10px;
+}
+
+.welcome-text {
+    font-size: 22px;
+    margin: 0 0 50px;
+}
+
+
+/* Четыре кнопки */
+
+.main-nav {
+    width: 650px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.main-nav a {
+    height: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    background-color: white;
+    border: 1px solid #aaa;
+    border-radius: 12px;
+
+    color: #222;
+    text-decoration: none;
+    font-size: 23px;
+
+    transition: 0.2s;
+}
+
+.main-nav a:hover {
+    background-color: #f7f7f7;
+    border-color: #777;
+    transform: translateY(-3px);
+}
+
+
+/* Подпись */
+
+.main-footer {
+    margin-top: auto;
+    padding-top: 25px;
+    border-top: 1px solid #aaa;
+
+    text-align: center;
+    font-size: 16px;
+}
+/* Обо мне */
+
+.about {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.about-photo {
+    width: 40%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.25s;
+}
+
+.about-photo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.about-photo img {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.about-text {
+    width: 60%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.25s;
+}
+
+.about-text:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.about-text h2 {
+    margin-top: 0;
+    font-size: 28px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.about-info {
+    margin-top: 35px;
+}
+
+.about-info h2 {
+    text-align: center;
+}
+
+.facts {
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.fact {
+    width: 33.33%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 25px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.25s;
+}
+
+.fact:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.fact h3 {
+    margin-top: 0;
+    font-size: 21px;
+}
+
+.fact p {
+    font-size: 16px;
+    line-height: 1.6;
+}
