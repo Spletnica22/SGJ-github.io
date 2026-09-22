@@ -54,7 +54,31 @@ body {
     border-bottom: none;
 }
 
-/* Заголовок */
+/* якоря */
+
+.anchor-menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 25px 0 35px;
+}
+
+.anchor-menu a {
+    padding: 12px 20px;
+    background-color: white;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    color: #222;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.2s;
+}
+
+.anchor-menu a:hover {
+    background-color: #f7f7f7;
+    border-color: #777;
+    transform: translateY(-2px);
+}
 
 h1 {
     text-align: center;
@@ -86,16 +110,11 @@ h1 {
     box-shadow: 0 7px 17px rgba(0, 0, 0, 0.12);
 }
 
-/* Сетка увлечений */
-
 .hobbies {
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
-
-
-/* Карточка */
 
 .hobby-card {
     display: flex;
@@ -108,9 +127,6 @@ h1 {
     transition: 0.2s;
 }
 
-
-/* Текстовая часть */
-
 .hobby-text {
     width: 50%;
     padding: 35px;
@@ -121,16 +137,10 @@ h1 {
     justify-content: center;
 }
 
-
-/* Заголовок внутри карточки */
-
 .hobby-text h2 {
     font-size: 28px;
     margin-bottom: 15px;
 }
-
-
-/* Текст */
 
 .hobby-text p {
     font-size: 17px;
@@ -139,7 +149,7 @@ h1 {
 }
 
 
-/* Изображение */
+/* фотки */
 
 .hobby-image {
     width: 50%;
@@ -153,9 +163,6 @@ h1 {
     object-fit: cover;
     display: block;
 }
-
-
-/* Кнопка назад */
 
 .back {
     margin-top: 35px;
