@@ -13,6 +13,20 @@ body {
     flex-direction: column;
 }
 
+.page-top {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.page-top a {
+    color: #222;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.page-top a:hover {
+    text-decoration: underline;
+}
 
 /* Заголовок */
 
