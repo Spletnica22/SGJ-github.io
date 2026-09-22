@@ -1,4 +1,3 @@
-/* Основные настройки страницы */
 
 body {
     font-family: Arial, sans-serif;
@@ -230,7 +229,6 @@ tr {
 tr:hover td {
     background-color: #f7f7f7;
 }
-/* Чему хочу научиться */
 
 .goals {
     list-style: none;
@@ -263,7 +261,7 @@ tr:hover td {
 }
 
 
-/* Карточка */
+/*карточка*/
 
 .balbes {
     flex: 1;
@@ -282,7 +280,7 @@ tr:hover td {
 }
 
 
-/* КНОПКА БАЛБЕСА */
+/* кнопка */
 
 .balbes-button {
     width: 100%;
@@ -324,16 +322,11 @@ tr:hover td {
 }
 
 
-/* Карточка при открытии */
+/* разворот кнопки */
 
 .balbes:has(.balbes-info.active) {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
-
-
-/* =========================================
-   ИНФОРМАЦИЯ
-   ========================================= */
 
 .balbes-info {
     max-height: 0;
@@ -371,11 +364,6 @@ tr:hover td {
     text-align: justify;
 }
 
-
-/* =========================================
-   ГАЛЕРЕЯ
-   ========================================= */
-
 .gallery {
     position: relative;
 
@@ -385,9 +373,6 @@ tr:hover td {
     align-items: center;
     justify-content: center;
 }
-
-
-/* Фотография */
 
 .gallery-img {
     display: block;
@@ -399,12 +384,6 @@ tr:hover td {
 
     border-radius: 10px;
 }
-
-
-/* =========================================
-   КНОПКИ ← →
-   ========================================= */
-
 .gallery button {
     position: absolute;
 
@@ -525,7 +504,7 @@ tr:hover td {
     transform: translateY(-2px);
 }
 
-/* Главная страница */
+/*главная */
 
 .home {
     text-align: center;
@@ -539,7 +518,7 @@ tr:hover td {
 }
 
 
-/* Главный заголовок */
+/*заголовок*/
 
 .main-title {
     font-size: 46px;
